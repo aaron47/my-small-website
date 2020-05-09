@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: darkcyan;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.pricing-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: min(1600px, 100%);
+  margin: auto;
+}
+
+.pricing-card {
+  flex: 1;
+  max-width: 360px;
+  background-color: #fff;
+  margin: 20px -100px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  color: #2d2d2d;
+  transition: .3 linear;
+}
+
+.pricing-card-header {
+  background-color: #0fbcf9;
+  display: inline-block;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 0 0 20px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: .4s linear;
+}
+
+.pricing-card:hover .pricing-card-header{
+  box-shadow: 0 0 0 26em #0fbcf9;
+}
+
+.price {
+  font-size: 70px;
+  color: #0fbcf9;
+  margin: 40px 0;
+  transition: .2s linear;
+}
+
+.price sup, .price span {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.pricing-card:hover, .pricing-card:hover .price {
+  color: #fff;
+}
+
+.pricing-card-header > li {
+  font-size: 16px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.order-btn {
+  display: inline-block;
+  margin-bottom: 40px;
+  margin-top: 80px;
+  border: 2px solid darkslateblue;
+  color: darkslateblue;
+  padding: 18px 40px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: .3s linear;
+}
+
+.order-btn:hover {
+  background-color: #0fbcf9;
+  background: darkslateblue;
+  color: #fff;
+}
+
+footer {
+  margin-top: 30px 0 100px;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
+
+a {
+  color: purple;
+}
+
+img {
+  width: 30vh;
+}
+
+header {
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+}
+
+.nav-bar > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.logo {
+  margin-right: 670px;
+}
+
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+  width: 100%;
+}
+
+.profile-content-wrapper {
+  padding: 30px;
+}
+
+.profile-content-wrapper > h2{
+  color: darkslateblue;
+}
+
+@media screen and (max-width: 1100px) {
+  .pricing-card {
+    flex: 50%
+  }
+}
